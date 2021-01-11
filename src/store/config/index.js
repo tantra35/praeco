@@ -1293,7 +1293,6 @@ export default {
       let conf = {};
 
       Object.keys(config)
-        .sort()
         .forEach(v => {
           conf[v] = config[v];
         });
