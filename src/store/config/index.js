@@ -85,6 +85,7 @@ export default {
         commit('settings/UPDATE_NAME', config.name);
         commit('settings/UPDATE_DESCRIPTION', config.description);
         commit('settings/UPDATE_INDEX', config.index);
+        commit('settings/UPDATE_SMTP_HOST', config.smtp_host);
 
         // If is_enabled is not in the config, the rule is in fact enabled
         if (config.is_enabled === undefined || config.is_enabled) {
@@ -1143,6 +1144,10 @@ export default {
 
       if (state.settings.index) {
         config.index = state.settings.index;
+      }
+
+      if (state.settings.smtp_host) {
+        config.smtp_host = state.settings.smtp_host
       }
 
       if (state.settings.timeField) {

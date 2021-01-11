@@ -52,6 +52,10 @@ export default {
       state.index = index;
     },
 
+    UPDATE_SMTP_HOST(state, smtp_host) {
+      state.smtp_host = smtp_host;
+    },
+
     UPDATE_TIME_FIELD(state, timeField) {
       state.timeField = timeField;
     },
