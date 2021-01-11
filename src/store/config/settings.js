@@ -53,7 +53,7 @@ export default {
     },
 
     UPDATE_SMTP_HOST(state, smtp_host) {
-      if (!smtp_host) return; 
+      if (!smtp_host) return;
       state.smtp_host = smtp_host;
     },
 
