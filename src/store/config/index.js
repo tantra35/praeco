@@ -1147,7 +1147,7 @@ export default {
       }
 
       if (state.settings.smtp_host) {
-        config.smtp_host = state.settings.smtp_host
+        config.smtp_host = state.settings.smtp_host;
       }
 
       if (state.settings.timeField) {
